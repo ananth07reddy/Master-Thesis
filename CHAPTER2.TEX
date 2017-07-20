@@ -1,0 +1,110 @@
+# Master-Thesis
+#Use of attack graphs in Enterprise level
+\chapter{Foundation of Vulnerability Management and Attack Graphs}
+\label{ch2}
+\section{Vulnerability Management}
+
+\subsection{What is VM?}
+Vulnerability management is a consistent data security risk process that requires administration supervision. There are four level main processes that enclose Vulnerability Management -- Identifying, Reporting, Prioritisation and Response \cite{whatvm}.
+Each procedure and sub procedure within it need to be piece of a constant cycle concentrated on enhancing security and lessening the risk profile of system resources.
+
+\subsection*{Identifying and reidentifying}
+Identifying is the procedure by which network resources are found, sorted and assessed. Information about resources should be classified into information classes, for example configuration, patch state, vulnerability, just inventory or compliance state.
+
+The identifying stage should find each computing resource (yes, each and every one) within your network and build a database of learning other Vulnerability Management processes can use. Since your network assets continuous state of progress, the information about your network resources to be continually invigorated.
+
+\subsection*{Reports}
+Reporting of the information found during identify generally provides a various distinctive results suitable for various kind of audiences. Reports should make a prioritisation matrix that data feeds into processes. After all, the raw data which is comes from identifying isn't terribly useful on an enterprise. 
+
+Preferably, these reports can likewise be utilised for strategic operations assignments and,  at a high level, to give visibility and business-situated risk measurements to upper management.
+
+\subsection*{Priorities are Everything}
+Prioritisation is a high critical risk management process that positions known risks as per a predefined set of attributes. For instance, prioritisation should start a manner of thinking something like this:
+
+Given the present state of the assets from the identify process,  the estimation of that particular asset and any known risks, how vital is it that we spend resources to remediate or mitigate these known risks? On the other hand, are the known risks on this particular asset as of now acceptable to our daily business?
+
+The objective of prioritisation is to make an altered rundown of what to handle first, second, third and etc. Ideally, this organised list of activities is utilised to feed into ticketing systems for IT operations as well as drive particular tasks for system administrators.
+
+\subsection*{Risk Response}
+Risk Response is a second part of the prioritisation procedure. Basically, risk response is the approach of an organisation tends to address known risks (disregarding risk is not a response).
+
+Addressing risk can be categorised into three levels -- accept, remediate or mitigate. Remediation can be thought as the demonstration of adjusting a found flaw. For instance, if risk is caused by a missing patch, one alternative is to remediate the issue by installing the updated patch. Additionally, mitigation is the act of decreasing risk by making some other move generally outside at once realm of the affected network systems. For instance, rather than fixing a found web application defect on your system, you could introduce a web application firewall. The vulnerability is still in place on the system, but with web application firewall the risk is moderated. 
+
+Risk acceptance means, it is making a decision that not to mitigate or remediate. For instance, the security operations team may recommend that to run antivirus software. Nevertheless, business stakeholders consent not to use AV softwares since it would influence engineering test cases. In this situation, the business has to accept the known risk. 
+
+\subsection{Why Vulnerability Management}
+
+Cybersecurity in a continues state of flux. Data breaches happen very often, to the point where it's never again a stun to hear that your own data has been compromised. With the increased critical observation set after dealing with your potential security risks, it's more essential than any other to create and implement vigorous Vulnerability Management Program. Any enterprise leading business over or even simply connected to the web is in danger of a network based attack originating from a vulnerability within a connected network. While not all enterprises are required to implement a VM program, I believe those that select not to might be taking an preventable risk \cite{whyvm}.  
+
+Exploits are continuously coming into your network, so alertness patching is very important \cite{whyvm1}.
+
+\subsection*{Key points}
+
+\begin{itemize}[label=$\triangleright$]
+\item \texttt Vulnerability Management includes to finding vulnerabilities in software and patching them to avert unwanted privileges.
+\item \texttt A powerful Vulnerability Management approach should involves continuous monitoring and incorporation with configuration management and patching installation.
+\item \texttt Mobile phones and the cloud introduces new flaws and need to be a part of your overall security process.
+
+\end{itemize}
+
+An innocent truth of managing an organisation nowadays is that the no. of cyberattacks are not diminishing and hackers are continuously finding better approaches to get to inward corporate networks and systems. One constant path for hackers exploiting organisational business is through the revelation of vulnerabilities in software before product vendors can issue patches. Unfortunately, it is a developing trend. \texttt{"In 2014, an average of 19 vulnerabilities per day were reported, according to data from the National Vulnerability Database," says Monolina Sen, senior analyst for digital security at ABI Research}. The number is remarkable than the 2013 vulnerabilities and is expected to rise rapidly in next coming years.
+
+These vulnerabilities regularly go unprotected by other safety efforts, for example, firewalls, since they are commonly obscure back doors that give direct access to attackers on installed softwares.  A security tool has to comprehend what it's searching for which is the reason Vulnerability Management is important to include into most security approaches. 
+
+\subsection{A short history of VM}
+
+VM has been around for quite a while yet few have focused on it as of not long ago. The military has long comprehended and culminated VM through custom and practice. Investigation of defences from the enterprise and deployment tactics to the individual warrior and weapons are the equivalent of audits. The recursive rearrangement of defence, equipping and training is a type of remediation or solidifying. But these kind of activities wouldn't come without understanding opponents.
+
+\subsection{How works VM?}
+
+Whether you have consistently followed the principle of VM or are just now putting importance on it, one thing need to be understand that this zone is continuously changing, as new technologies enter the crease, tactics need to be changed to prevent flaws from cyberattacks. Tragically, as enterprises move towards the mobile devices and cloud, hackers are also turning their observation into those same technologies. 
+
+Actually,\texttt{"software-as-a-service suppliers have the excessive number of vulnerabilities on average,"} says Sen.
+
+The cloud can be utilised maliciously for different purposes like spamming, DDOS [distributed denial of service], hash cracking, malware distribution and password. in addition big data breaches, cloud computing will also have remarkable impact, with the potential for considerably more major reputational flaws and lawful repercussions than never before. Any new innovation that is not surely understood is undoubtedly introduce new kind of threats and vulnerabilities. 
+
+Cloud computing is big challenge for today's Vulnerability Management tactics that a similar thought applies to any auto-scaling sort of service that requires a shatter in resources during extreme demand. If a system has known vulnerability in a baseline configuration and now auto-scale the servers underside that application, That means, attack surface range is being constantly increased. If 20 servers has vulnerability, in auto-scaling set it can be exploited to 100 servers within short time. In a cloud based environment, it is significant to ensure that baseline configuration is being scanned constantly for known vulnerabilities and should upgrade it before goes into auto scaling.
+
+Well,\texttt{"there is an estimation that by 2017, 40{\%} of enterprises will be including mobile devices into their VM programs," says Rochford}\cite{whyvm1}. From an innovation perspective, cell phones are being overseen in an unexpected way. They're not really managing by the security teams but are being managed by the operational teams. The division in perceivability is still there. It's something that, because of the sheer measure of mobile phones out there, organisations are beginning to pick on.
+
+\section{Attack Graphs}
+
+\subsection{What is attack graphs}
+These are some data structures that model every single conceivable path of penetrating a network. Two adaptations have been generally used: 
+
+\begin{itemize}[label=$\triangleright$]
+\item \texttt Directed graph, Where nodes indicate network state and edges indicate the software program of an exploit that can be transforms into one network state to another network state. The completion conditions of the attack graph indicates the network states in which the attacker has accomplished his objectives \cite{chochliouros2009methods}. Figure \ref{fig:attackgraph} shows a logical attack graph.
+\item \texttt Attack graph in the format of an exploitation dependency graph.  This what called as a direct graph, where each nodes indicate to a pre-(or, contingent upon the perspective, a post-) state of an exploit, and edges indicate to the outcome of having a genuine precondition that authorises an exploit postcondition.
+\end{itemize}
+%A logical attack graph is a directed graph and can be indicated in the format of a tree with conceivable cross connection between the nodes. 
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.9\textwidth,height=50cm,keepaspectratio]%
+	{03_GraphicFiles/Attack.png}%
+	\caption{An example of attack graph \cite{shandilya2014use}}
+	\label{fig:attackgraph}
+\end{figure}
+
+\subsection{Why attack graphs?}
+When examining the security of an enterprise network, it is imperative to consider multi-stage, multi-host attack paths. A purposeful attacker is not appropriate to stop at the system he first compromises, yet can be anticipated to attempt to enter further into the network by jumping from one machine to the next machine. There are numerous potential communications among various hosts and parts in a network, with the end goal that the configuration of one machine will influence the security of others in the network \cite{ou2006scalable}. A standout amongst the most widely recognised strategy to secure networks is to distinguish and patch vulnerabilities. Nonetheless, this is regularly not deliberately done, either for lack of labor or in light of the fact that it requires hindering critical systems. 
+
+A risk driven approach is thusly needed to increase resources for network security. Such an approach requires surveying the networks threats, organising the most carping threats, and after that assessing the risk exposures, given the probability of threats and the extremity of the impacts. At last, these values are utilised by security analysts to choose appropriate countermeasures. In any case, regularly this examination is done independently for each of the network parts disregarding interdependencies between vulnerabilities, i.e. how effectively exploiting a vulnerability enables an attacker to exploit different vulnerabilities, therefore moving over the network and gaining user privileges at each progression \cite{munoz2016efficient}.
+
+These deficiencies can be addressed utilising Attack Graphs an entrenched method to represent the conceivable ways of an attacker through the system by exploiting progressive vulnerabilities. AGs (Attack Graph) enable security analysts to reason about vulnerabilities and risks formally to better choose countermeasures \cite{munoz2016efficient}. Therefore, it is very significant to design automatic tools, that can examine the configuration of an organisation network and discover potential security threats. Such an apparatus won't be extremely helpful if it can't advise a security analyst with point by point data about the found problems. Specifically, an \textbf{attack graph} that shows all conceivable multi-stage, multi-host attack ways is pivotal for a security analyst to comprehend the idea of the threats and decide on proper countermeasures.
+
+\subsection{A short history of Attack Graphs}
+The work by Sheyner, et al. \cite{sheyner2002automated} is the first and foremost formal treatment of attack graphs and the software version was developed in 2005. Sheyner utilises model checking to calculate multi-stage, multi-host attack ways in a network. The condition of the network is formally formed as a collection of characterising configuration parameters, attacker's privileges and Boolean variables. Attacker's activities are demonstrated as state-transition relations. The security property of the network is determined as a transient equation, which can be automatically analysed against the model by a model checker. Not at all like a traditional model checker, which only yields one counter illustration when the transient formula is not fulfilled, Sheyner's framework can output every single counter case as a \texttt{scenario graph} \cite{ou2006scalable}. In the network security, the scenario graph is an attack graph representing all the multi-stage, multi-host attack ways that can possibly break a network's security assets. 
+
+A formal, logic based way to deal with attack graph era, similar to that one by Sheyner, is invaluable contrasted with ad-hoc graph era strategies. Using, fully mature logic-based techniques are less error-prone comparatively custom designed algorithms, particularly, for the composite issues of security analysis. A perfect logical semantics for attack graphs makes easier to perform further analysis based on graph data structure.
+
+\subsection{How Attack Graphs work?}
+To comprehend the idea of attack graphs, let us take a gander at the different steps that is required for having the capacity to develop a graph demonstrating numerous progression attacks. To start with, data about the running systems should be accumulated: running services, network structures, software and host access control list. Second, the gathered systems data should be coordinated against a vulnerability database. This is not generally easy since the data about software vulnerabilities stored in the open databases (for example NVD) is placed in a non-uniform manner which may lead to information loss when it is deciphered and used by the attack graph tools \cite{sommestad2015empirical}.
+
+at last, the system data and vulnerability data is examined and imagined in a graph. Graphs introduced by attack tools are very often composite and pretty much difficult to completely understand, notwithstanding for networks with just a couple of hosts and vulnerabilities. At the point when attack graphs are assessed against genuine attacks there is need of choosing which ascribes that are essential to assess. All tools have a similar reason to create all conceivable attack ways on a network with data about the system and vulnerabilities, however there are a few contrasts between them. The detailed information about the attack graph tools in Chapter 3.	
+
+
+
+
+
+
